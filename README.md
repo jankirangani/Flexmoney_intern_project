@@ -57,7 +57,9 @@ Start the server
   npm run start
 ```
 Runs the app in the development mode.
+
 Replace the base URL of your locally running backend in axios.jsx. 
+
 Also make sure to start backend and database to run it properly.
 
 ## Backend
@@ -79,6 +81,7 @@ Clone the project in your Intellij idea
 
 ```
 Before running the project make sure to add database and it should run in the background.
+
 change the cross origin in yoga_form_backend\src\main\java\com\example\yoga_form_backend\Controller\UserController.java to your locally running frontend url.
 
 
@@ -100,9 +103,13 @@ src>main>resources> application properties:
 add this lines:
 
 spring.datasource.url=jdbc:mysql://localhost:3306/flexmoney_intern_project_db?useSSL=false
+
 spring.datasource.username=** your username **
+
 spring.datasource.password=** your password **
+
 spring.jpa.hibernate.ddl-auto=update
+
 Access-Control-Allow-Origin:"http://localhost:3000/" (or the url of your locally running frontend)
 
 ## ER Diagram
